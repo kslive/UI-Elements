@@ -37,17 +37,40 @@
                                     <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Yf-kZ-eOR"/>
                                 </connections>
                             </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter you name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lzF-Nf-4wY">
+                                <rect key="frame" x="20" y="156" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-u5-eH2">
+                                <rect key="frame" x="20" y="433" width="374" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="xAs-dx-by2"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOB-x8-Euf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whV-vG-X7t" secondAttribute="trailing" constant="20" id="7dF-XM-17h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Muc-AI-kTK" secondAttribute="trailing" constant="20" id="AnR-sr-PfI"/>
+                            <constraint firstItem="xTP-u5-eH2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESR-Cr-1zb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lzF-Nf-4wY" secondAttribute="trailing" constant="20" id="I3U-ha-eJ2"/>
                             <constraint firstItem="Muc-AI-kTK" firstAttribute="top" secondItem="whV-vG-X7t" secondAttribute="bottom" constant="10" id="S5y-Gi-frY"/>
                             <constraint firstItem="Il8-B4-obc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bhd-9G-gPJ"/>
+                            <constraint firstItem="xTP-u5-eH2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dq9-pD-8PN"/>
                             <constraint firstItem="whV-vG-X7t" firstAttribute="top" secondItem="Il8-B4-obc" secondAttribute="bottom" constant="10" id="eWx-6U-vTF"/>
                             <constraint firstItem="whV-vG-X7t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fQT-bn-0XH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Il8-B4-obc" secondAttribute="trailing" id="gs8-sY-xg7"/>
                             <constraint firstItem="Il8-B4-obc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jGc-W3-HJq"/>
+                            <constraint firstItem="lzF-Nf-4wY" firstAttribute="top" secondItem="Muc-AI-kTK" secondAttribute="bottom" constant="10" id="xTK-4f-z7z"/>
+                            <constraint firstItem="lzF-Nf-4wY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="y6B-Pz-aCL"/>
                             <constraint firstItem="Muc-AI-kTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zpC-ON-sno"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -56,6 +79,7 @@
                         <outlet property="label" destination="whV-vG-X7t" id="EPj-w4-ss2"/>
                         <outlet property="segmentedControl" destination="Il8-B4-obc" id="LeQ-or-M2h"/>
                         <outlet property="slider" destination="Muc-AI-kTK" id="dDq-nw-kkj"/>
+                        <outlet property="textField" destination="lzF-Nf-4wY" id="AIN-fa-RX0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
