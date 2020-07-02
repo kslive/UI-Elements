@@ -31,21 +31,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Muc-AI-kTK">
+                                <rect key="frame" x="18" y="116" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Yf-kZ-eOR"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whV-vG-X7t" secondAttribute="trailing" constant="20" id="7dF-XM-17h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Muc-AI-kTK" secondAttribute="trailing" constant="20" id="AnR-sr-PfI"/>
+                            <constraint firstItem="Muc-AI-kTK" firstAttribute="top" secondItem="whV-vG-X7t" secondAttribute="bottom" constant="10" id="S5y-Gi-frY"/>
                             <constraint firstItem="Il8-B4-obc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bhd-9G-gPJ"/>
                             <constraint firstItem="whV-vG-X7t" firstAttribute="top" secondItem="Il8-B4-obc" secondAttribute="bottom" constant="10" id="eWx-6U-vTF"/>
                             <constraint firstItem="whV-vG-X7t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fQT-bn-0XH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Il8-B4-obc" secondAttribute="trailing" id="gs8-sY-xg7"/>
                             <constraint firstItem="Il8-B4-obc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jGc-W3-HJq"/>
+                            <constraint firstItem="Muc-AI-kTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zpC-ON-sno"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="whV-vG-X7t" id="EPj-w4-ss2"/>
                         <outlet property="segmentedControl" destination="Il8-B4-obc" id="LeQ-or-M2h"/>
+                        <outlet property="slider" destination="Muc-AI-kTK" id="dDq-nw-kkj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
