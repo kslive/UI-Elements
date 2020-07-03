@@ -66,19 +66,36 @@
                                             <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOB-x8-Euf"/>
                                         </connections>
                                     </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bIm-Xf-DUl">
+                                        <rect key="frame" x="345" y="781" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bpM-e2-e1t"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скрыть все элементы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwe-3a-Etr">
+                                        <rect key="frame" x="20" y="791" width="315" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="xTP-u5-eH2" secondAttribute="trailing" constant="20" id="1D2-VJ-er5"/>
                                     <constraint firstItem="whV-vG-X7t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sd3-hC-yWK" secondAttribute="leading" constant="20" id="2z8-Al-tMK"/>
+                                    <constraint firstItem="bIm-Xf-DUl" firstAttribute="leading" secondItem="kwe-3a-Etr" secondAttribute="trailing" constant="10" id="3U6-kc-85G"/>
                                     <constraint firstItem="whV-vG-X7t" firstAttribute="centerX" secondItem="sd3-hC-yWK" secondAttribute="centerX" id="8Ff-xW-Y1m"/>
+                                    <constraint firstItem="kwe-3a-Etr" firstAttribute="leading" secondItem="3eb-Sg-MSg" secondAttribute="leading" constant="20" id="BFM-iP-Sak"/>
                                     <constraint firstItem="lzF-Nf-4wY" firstAttribute="top" secondItem="Muc-AI-kTK" secondAttribute="bottom" constant="10" id="DCr-lk-Ktt"/>
                                     <constraint firstItem="xTP-u5-eH2" firstAttribute="top" secondItem="lzF-Nf-4wY" secondAttribute="bottom" constant="434.5" id="Gix-gN-KTj"/>
                                     <constraint firstAttribute="bottom" secondItem="xTP-u5-eH2" secondAttribute="bottom" constant="191.5" id="OTv-7L-lx4"/>
                                     <constraint firstItem="Muc-AI-kTK" firstAttribute="top" secondItem="whV-vG-X7t" secondAttribute="bottom" constant="10" id="Om2-oy-o9Q"/>
+                                    <constraint firstItem="3eb-Sg-MSg" firstAttribute="bottom" secondItem="kwe-3a-Etr" secondAttribute="bottom" constant="10" id="PHs-rb-hMi"/>
                                     <constraint firstItem="lzF-Nf-4wY" firstAttribute="top" secondItem="Muc-AI-kTK" secondAttribute="bottom" constant="10" id="Qmb-xK-RWu"/>
                                     <constraint firstItem="whV-vG-X7t" firstAttribute="top" secondItem="Il8-B4-obc" secondAttribute="bottom" constant="10" id="V7U-bX-dw0"/>
                                     <constraint firstItem="Muc-AI-kTK" firstAttribute="centerX" secondItem="sd3-hC-yWK" secondAttribute="centerX" id="Vr8-WR-K67"/>
+                                    <constraint firstItem="3eb-Sg-MSg" firstAttribute="bottom" secondItem="bIm-Xf-DUl" secondAttribute="bottom" constant="10" id="Wgy-V5-DqP"/>
                                     <constraint firstAttribute="trailing" secondItem="lzF-Nf-4wY" secondAttribute="trailing" constant="20" id="XJa-29-Qlv"/>
+                                    <constraint firstItem="3eb-Sg-MSg" firstAttribute="trailing" secondItem="bIm-Xf-DUl" secondAttribute="trailing" constant="20" id="bhj-d4-4hh"/>
                                     <constraint firstAttribute="trailing" secondItem="whV-vG-X7t" secondAttribute="trailing" constant="20" id="dE4-Ye-AmJ"/>
                                     <constraint firstItem="xTP-u5-eH2" firstAttribute="leading" secondItem="sd3-hC-yWK" secondAttribute="leading" constant="20" id="dmC-pv-gmM"/>
                                     <constraint firstAttribute="trailing" secondItem="Muc-AI-kTK" secondAttribute="trailing" constant="20" id="ejv-Y6-GlG"/>
@@ -105,9 +122,11 @@
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="datePicker" destination="XaC-Zf-TeM" id="vJM-ZJ-0Wb"/>
+                        <outlet property="doneButton" destination="xTP-u5-eH2" id="mgi-4t-Qon"/>
                         <outlet property="label" destination="whV-vG-X7t" id="EPj-w4-ss2"/>
                         <outlet property="segmentedControl" destination="Il8-B4-obc" id="LeQ-or-M2h"/>
                         <outlet property="slider" destination="Muc-AI-kTK" id="dDq-nw-kkj"/>
+                        <outlet property="switchLabel" destination="kwe-3a-Etr" id="bth-ay-mrG"/>
                         <outlet property="textField" destination="lzF-Nf-4wY" id="AIN-fa-RX0"/>
                     </connections>
                 </viewController>
