@@ -48,6 +48,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="XaC-Zf-TeM">
+                                        <rect key="frame" x="0.0" y="303" width="414" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <locale key="locale" localeIdentifier="ru"/>
+                                        <connections>
+                                            <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Q3h-ZN-pbi"/>
+                                        </connections>
+                                    </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-u5-eH2">
                                         <rect key="frame" x="20" y="600.5" width="374" height="30"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -96,6 +104,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
+                        <outlet property="datePicker" destination="XaC-Zf-TeM" id="vJM-ZJ-0Wb"/>
                         <outlet property="label" destination="whV-vG-X7t" id="EPj-w4-ss2"/>
                         <outlet property="segmentedControl" destination="Il8-B4-obc" id="LeQ-or-M2h"/>
                         <outlet property="slider" destination="Muc-AI-kTK" id="dDq-nw-kkj"/>
